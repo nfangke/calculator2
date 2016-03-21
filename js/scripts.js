@@ -22,7 +22,11 @@ var fahrenheitToCelsius = function(number1){
   return (number1 - 32) * (5/9);
 }
 
+var celsiusToFahrenheit = function (number1) {
+  return ((number1) * (9 / 5)) + 32 ;
+};
+
 var number1 = parseFloat(prompt("Enter your Celsius:"));
 var number2 = parseFloat(prompt("Enter your Height:"));
-var result = fahrenheitToCelsius(number1 , number2);
+var result = celsiusToFahrenheit(number1 , number2);
 alert(result);
