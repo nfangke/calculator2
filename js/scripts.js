@@ -26,7 +26,15 @@ var celsiusToFahrenheit = function (number1) {
   return ((number1) * (9 / 5)) + 32 ;
 };
 
-var number1 = parseFloat(prompt("Enter your Celsius:"));
+var gallonsToLiters = function (number1) {
+  return number1 / 0.26417205235815 ;
+} ;
+
+var litersToGallons = function (number1) {
+  return number1 * 0.26417205235815 ;
+} ;
+
+var number1 = parseFloat(prompt("Enter your liters:"));
 var number2 = parseFloat(prompt("Enter your Height:"));
-var result = celsiusToFahrenheit(number1 , number2);
+var result = litersToGallons(number1 , number2);
 alert(result);
