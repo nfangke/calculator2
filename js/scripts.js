@@ -34,7 +34,16 @@ var litersToGallons = function (number1) {
   return number1 * 0.26417205235815 ;
 } ;
 
-var number1 = parseFloat(prompt("Enter your liters:"));
+var poundToKg = function(number1) {
+  return number1 * 2.20462;
+};
+
+var kgToPound = function(number1) {
+  return number1 / 2.20462;
+};
+
+
+var number1 = parseFloat(prompt("Enter your Weight:"));
 var number2 = parseFloat(prompt("Enter your Height:"));
-var result = litersToGallons(number1 , number2);
+var result = kgToPound(number1 , number2);
 alert(result);
